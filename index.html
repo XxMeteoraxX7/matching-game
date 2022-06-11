@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/388639b1e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +13,30 @@
     <style>
         * {
             box-sizing: border-box;
-           max-width: 1049px;
-
+            max-width: 1051px;
         }
 
         html {
             margin-left: auto;
             margin-right: auto;
+            background: url(img/ocean.mov);
         }
 
         body {
             width: 100%;
-            border: 5px ridge black;
         }
 
         .width {
-            background-image: url('img/abstract.jpg');
+            background-image: url('img/wood1.jpg');
             padding-top: 25px;
             width: 100%;
             height: 1100px;
             background-size: cover;
-            background-repeat: no-repeat; 
+            border: 5px ridge darkred;
         }
 
         header {
-            border: 10px groove yellow;
+            border: 10px groove brown;
             background: linear-gradient(cyan, teal, skyblue);
             border-radius: 50%;
             text-align: center;
@@ -75,7 +79,7 @@
         }
 
         #leftSide {
-            border: 10px groove red;
+            border: 10px groove brown;
             background: url(img/ocean.mov);
             z-index: 2;
             top: 0;
@@ -89,11 +93,11 @@
         }
 
         .instructions {
-            border: 3px groove yellow;
+            border: 10px groove brown;
             background: linear-gradient(cyan, teal, skyblue);
             text-align: center;
             margin-top: 60px;
-            width: 90%;
+            width: 94%;
             margin-left: auto;
             margin-right: auto;
             border-radius: 33%;
@@ -120,8 +124,11 @@
         }
     </style>
 </head>
+
 <body onload="generateFaces()">
+
     <section class="width">
+
     <header>
         <h1>Adam's Matching Game</h1>
         <p>Click on the extra icon on the left.</p>
@@ -138,12 +145,12 @@
 
     <section class="instructions">
         <ul class="list">
-                <li>When the game starts, five icons are shown on the left and four are shown on the right.</li>
-                <li>You need to click on that extra icon on the left side. If anything except the correct icon is clicked, the game is over.</li>
-                <li>If the correct icon is clicked, all displayed icons are removed and new icons are shown at random positions</li>
-                <li>Each time a new set of icons is shown there will be 5 more icons than before, on both the left and the right sides.</li>
-                <li>There will always be one more icon shown on the left than on the right.</li>
-                <li>Upon losing the game a reset button will apear to allow you to try again!</li>
+                <li><i class="fa-solid fa-anchor"></i> When the game starts, five icons are shown on the left and four are shown on the right.</li>
+                <li><i class="fa-solid fa-anchor"></i> You need to click on that extra icon on the left side. If anything except the correct icon is clicked, the game is over.</li>
+                <li><i class="fa-solid fa-anchor"></i> If the correct icon is clicked, all displayed icons are removed and new icons are shown at random positions</li>
+                <li><i class="fa-solid fa-anchor"></i> Each time a new set of icons is shown there will be 5 more icons than before, on both the left and the right sides.</li>
+                <li><i class="fa-solid fa-anchor"></i> There will always be one more icon shown on the left than on the right.</li>
+                <li><i class="fa-solid fa-anchor"></i> Upon losing the game a reset button will apear to allow you to try again!</li>
         </ul>
     </section>
     </section>
